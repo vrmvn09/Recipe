@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', async () => {
-  const apiKey = '412f9fe304cc4ed4b9056f2be996c621';
+  const apiKey = 'YOUR_SPOONACULAR_API_KEY';
   const path = window.location.pathname;
   const searchInput = document.getElementById('searchInput');
   const recipesContainer = document.getElementById('recipes');
