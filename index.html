@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Recipe Finder</h1>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search for recipes...">
+      <a href="favorite.html" class="favorites-link">View Favorites</a>
+    </div>
+  </header>
+
+  <div id="recommendedSection">
+    <div class="recommendation-title">Recommended Recipes</div>
+    <div id="recommendedRecipes" class="recipe-grid"></div>
+  </div>
+
+  <div id="recipes" class="recipe-grid"></div>
+
+  <!-- Modal for Recipe Details -->
+  <div id="recipeModal" class="modal">
+    <div class="modal-content" id="recipeDetails">
+      <span class="close">&times;</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

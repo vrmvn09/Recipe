@@ -1,0 +1,247 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  width: 100%;
+  padding: 1.5em 0;
+  text-align: center;
+  color: white;
+  font-size: 1.8em;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Back to Search button */
+header a.back-link {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  background-color: #6a1b9a;
+  padding: 0.8em 1.5em;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+}
+
+header a.back-link:hover {
+  background-color: #4a0072;
+  transform: scale(1.05);
+}
+
+/* Search input */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 1em;
+}
+
+#searchInput {
+  width: 60%;
+  max-width: 600px;
+  padding: 0.8em;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#searchInput:focus {
+  outline: none;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* View Favorites link */
+.favorites-link {
+  margin-left: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  background-color: #6a1b9a;
+  padding: 0.5em 1em;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.favorites-link:hover {
+  background-color: #4a0072;
+  transform: scale(1.05);
+}
+
+/* Recommendations title */
+.recommendation-title {
+  text-align: center;
+  font-size: 1.5em;
+  color: #333;
+  margin: 20px 0;
+}
+
+/* Recipe Grid */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  margin: 60px auto; 
+}
+
+/* Recipe Card */
+.recipe-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-10px);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.recipe-card h3 {
+  font-size: 1.2em;
+  margin: 1em 0 0.5em;
+  padding: 0 1em;
+  color: #ff7e5f;
+  flex-grow: 1;
+}
+
+.recipe-card p {
+  color: #555;
+  padding: 0 1em;
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+
+.recipe-card button {
+  background: #ff7e5f;
+  color: white;
+  border: none;
+  padding: 0.8em;
+  width: 100%;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.recipe-card button:hover {
+  background: #feb47b;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 700px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+.modal-content h2 {
+  color: #ff7e5f;
+  font-size: 1.6em;
+  margin-bottom: 1em;
+}
+
+.modal-content h3 {
+  font-size: 1.2em;
+  margin-top: 1em;
+  color: #333;
+}
+
+.modal-content p, .modal-content ul {
+  color: #555;
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+.modal-content ul {
+  list-style-type: disc;
+  padding-left: 1.5em;
+}
+
+.modal-content button {
+  background: #ff7e5f;
+  color: white;
+  border: none;
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 1em;
+  transition: background 0.3s ease;
+}
+
+.modal-content button:hover {
+  background: #feb47b;
+}
+
+.close {
+  color: #aaa;
+  font-size: 1.5em;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: #333;
+}
