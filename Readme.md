@@ -38,7 +38,7 @@ Recipe Finder — это веб-приложение, которое позво�
 ### Шаги установки
 1. Склонируйте репозиторий:
    ```bash
-   git clone https://github.com/yourusername/recipe-finder.git
+   git clone https://github.com/vrmvn09/recipe-finder.git
    cd recipe-finder
    ```
 
